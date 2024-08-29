@@ -1,16 +1,21 @@
 <template>
     <div class="home">
-        <p>Здесь будет этот сайт: <a href="https://www.figma.com/design/NrPZZU8u1sLytOicIHcIAx/РумТибет?node-id=0-1&t=iW3xtKhHMVh6b72E-0" target="_blank">Дизайн</a></p>
+        <home-intro />
     </div>
 </template>
 
 <script>
+import HomeIntro from '@/components/home/home-intro.vue'
+
 export default {
-    name: 'home-template'
+    name: 'home-template',
+    components: {
+        HomeIntro
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-.home {
+.home-template {
 }
 </style>

@@ -13,7 +13,7 @@
       </div>
     </v-app>
 </template>
-  
+
 <script>
 import TheHeader from "@/layout/the-header.vue";
 import TheFooter from "@/layout/the-footer.vue";
@@ -23,7 +23,7 @@ export default {
     components: { TheFooter, TheHeader },
 };
 </script>
-  
+
 <style lang="scss">
 .layout-main {
 }
