@@ -1,0 +1,16 @@
+.v-container {
+    padding: 20px 16px;
+    min-width: 100% !important;
+    display: block;
+
+    @include up($md) {
+        max-width: 1180px !important;
+        margin: 0 auto;
+        padding: 16px 20px;
+        min-width: auto !important;
+    }
+}
+
+.v-btn {
+    text-transform: capitalize;
+}

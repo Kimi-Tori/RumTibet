@@ -1,6 +1,8 @@
 @import 'mixins';
 
 $white: #FFFFFF;
+$grey: #cccccc;
+$green: #1A3E3E;
 $black: #000000;
 $red-error: #c94343;
 
@@ -21,18 +23,3 @@ $container-max-width--sm: $sm;
 $container-max-width--md: $md;
 $container-max-width--lg: $lg;
 $container-max-width--xl: $xl;
-
-// Переназначаю max-width у v-container
-.v-container {
-    max-width: 320px;
-    padding: 10px 10px;
-    min-width: 100% !important;
-    display: block;
-
-    @include up($md) {
-        max-width: 1200px !important;
-        margin: 0 auto;
-        padding: 10px 25px;
-        min-width: auto !important;
-    }
-}
