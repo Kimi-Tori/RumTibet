@@ -1,5 +1,5 @@
 <template>
-    <header class="the-header position-relative">
+    <header class="the-header position-absolute w-100">
         <v-container class="d-flex flex-md-column flex-lg-row align-center justify-space-between py-4">
             <router-link :to="{ name: 'home' }">
                 <icon-template name="logo" class="the-header__logo" />
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .the-header {
-    background-color: $black;
+    z-index: 1;
 
     &__logo {
         width: 137px;

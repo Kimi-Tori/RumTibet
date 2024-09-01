@@ -14,3 +14,8 @@
 .v-btn {
     text-transform: capitalize;
 }
+
+.v-field--variant-outlined .v-field__outline {
+    border-radius: 10px;
+    border-color: $white;
+}

@@ -1,36 +1,8 @@
 @font-face {
-    font-family: 'Art-light';
+    font-family: 'Next-Art';
     font-style: normal;
-    src: local('Art-light'), 
-         url('@/../public/fonts/Next-Art/NEXT ART_Light.otf') format('otf'), 
-}
-
-@font-face {
-    font-family: 'Art-Regular';
-    font-style: normal;
-    src: local('Art-Regular'), 
-         url('@/../public/fonts/Next-Art/NEXT ART_Regular.otf') format('otf'), 
-}
-
-@font-face {
-    font-family: 'Art-Heavy';
-    font-style: normal;
-    src: local('Art-Heavy'), 
-         url('@/../public/fonts/Next-Art/NEXT ART_Heavy.otf') format('otf'), 
-}
-
-@font-face {
-    font-family: 'Art-SemiBold';
-    font-style: normal;
-    src: local('Art-SemiBold'), 
-         url('@/../public/fonts/Next-Art/NEXT ART_SemiBold.otf') format('otf'), 
-}
-
-@font-face {
-    font-family: 'Art-Bold';
-    font-style: normal;
-    src: local('Art-Bold'), 
-         url('@/../public/fonts/Next-Art/NEXT ART_Bold.otf') format('otf'), 
+    src: local('Next-Art'), 
+         url('@/../public/fonts/Next-Art/NEXT ART_Regular.otf') format('truetype'), 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');

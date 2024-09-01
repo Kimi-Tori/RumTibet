@@ -17,3 +17,31 @@
         font-size: 18px;
     }
 }
+
+.nav-links {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include up($md) {
+        font-size: 18px;
+    }
+}
+
+.h1 {
+    font-family: 'Next-Art', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+
+    @include up($sm) {
+        font-size: 50px;
+        line-height: 75px;
+    }
+}
+
+.input-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}

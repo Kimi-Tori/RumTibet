@@ -6,13 +6,12 @@
             </v-btn>
 
             <div 
-              class="menu-mobile__container w-100 h-100 h-md-auto"
+              class="menu-mobile__container w-100 h-100 h-md-auto d-md-block"
               :class="{'d-block': showMenu, 'd-none': !showMenu}"
-              :style="{opacity: showMenu ? 1 : 0, transform: showMenu ? 'translateX(0)' : 'translateX(-100%)'}"
             >
               <ul v-if="items && items.length" class="d-md-flex flex-column flex-md-row justify-md-center w-100 mt-3 mt-md-0">
-                <li v-for="item in items" :key="item.name" class="menu-mobile__links header-link mx-6">
-                  <router-link :to="{ name: item.name }" class="menu-mobile__links-link color-white">{{ item.title }}</router-link>
+                <li v-for="item in items" :key="item.name" class="menu-mobile__links header-link ma-4">
+                  <router-link :to="{ name: item.name }" class="menu-mobile__links-link nav-links color-white">{{ item.title }}</router-link>
                 </li>
               </ul>
             </div>
@@ -51,8 +50,6 @@ export default {
 
 <style scoped lang="scss">
 .menu-mobile {
-  background-color: $black;
-
   &__btn {
     background-color: transparent;
     box-shadow: none;
@@ -86,14 +83,19 @@ export default {
 
   &__container {
     position: absolute;
-    top: calc(100% - 1px);
+    z-index: -1;
+    top: 0;
     left: 0;
-    background-color: $black;
     transition: opacity 0.2s, transform 0.2s;
+    padding-top: 110px;
+    min-height: 100vh;
+    background-color: $green;
 
     @include up($sm) {
-        position: relative;
-        // display: block;
+      background-color: transparent;
+      padding-top: 0;
+      min-height: auto;
+      position: relative;
     }
   }
 }
